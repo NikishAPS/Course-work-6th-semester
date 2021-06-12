@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Course work - Moodle</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer="defer"></script>
+  </head>
+  <body>
+    <section class="main">
+      <section class="navigation">
+        <div class="navigation__nav-container" x-data="{isNav1 : false, isNav2 : false, isNav3 : false}">
+          <div class="title-container"> 
+            <p class="title-text">Навигация </p>
+            <hr class="title-line"/>
+          </div>
+          <div class="point-container"> <a class="point-text" href="starter.html">Стартовая страница </a></div>
+          <div class="point-container"> <a class="point-text" href="start.html">Введение </a></div>
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav1 = !isNav1">Moodle</p>
+            <div class="next-point-container" x-show="isNav1">
+              <div class="mini-point-container"> <a href="moodle.html#1_1">Определение</a></div>
+              <div class="mini-point-container"> <a href="moodle.html#1_2">Возможности</a></div>
+              <div class="mini-point-container"> <a href="moodle.html#1_3">Особенности</a></div>
+              <div class="mini-point-container"> <a href="moodle.html#1_4">Достоинства</a></div>
+              <div class="mini-point-container"> <a href="moodle.html#1_5">Недостатки</a></div>
+              <div class="mini-point-container"> <a href="moodle.html#1_6">Вывод</a></div>
+            </div>
+          </div>
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav2 = !isNav2">Websoft HCM</p>
+            <div class="next-point-container" x-show="isNav2"> 
+              <div class="mini-point-container"> <a href="webTutor.html#2_1">Определение</a></div>
+              <div class="mini-point-container"> <a href="webTutor.html#2_2">Возможности</a></div>
+              <div class="mini-point-container"> <a href="webTutor.html#2_3">Особенности</a></div>
+              <div class="mini-point-container"> <a href="webTutor.html#2_4">Достоинства</a></div>
+              <div class="mini-point-container"> <a href="webTutor.html#2_5">Недостатки</a></div>
+              <div class="mini-point-container"> <a href="webTutor.html#2_6">Вывод</a></div>
+            </div>
+          </div>
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav3 = !isNav3">Skill Cup</p>
+            <div class="next-point-container" x-show="isNav3"> 
+              <div class="mini-point-container"> <a href="skillCup.html#3_1">Определение</a></div>
+              <div class="mini-point-container"> <a href="skillCup.html#3_2">Возможности</a></div>
+              <div class="mini-point-container"> <a href="skillCup.html#3_3">Особенности</a></div>
+              <div class="mini-point-container"> <a href="skillCup.html#3_4">Достоинства</a></div>
+              <div class="mini-point-container"> <a href="skillCup.html#3_5">Недостатски</a></div>
+              <div class="mini-point-container"> <a href="skillCup.html#3_6">Вывод</a></div>
+            </div>
+          </div>
+          <div class="point-container"> <a class="point-text" href="finish.html">Заключение</a></div>
+          <div class="point-container"> <a class="point-text" href="refs.html">Список использованных источников</a></div>
+        </div>
+      </section>
+      <section class="contents"> 
+        <div class="contents__cont-container" id="1_1">
+          <div class="title-container">
+            <h2>Определение</h2>
+          </div>
+          <div class="content-container">
+            <div class="text-container">
+              <p><a href="https://moodle.org/">Moodle</a> — бесплатная система электронного обучения с открытым кодом. За годы разработки вокруг Moodle сформировалось сильное сообщество, которое и создает новые модули (плагины) для платформы. Модуль — это ZIP-архив, который при установке на платформу добавляет новые функции или изменяет дизайн. Сегодня Moodle переведена более чем на 100 языков и поддерживает свыше 1500 плагинов.</p>
+            </div>
+            <div class="image-container">
+              <div class="box"><img src="images/moodle1.jpg"/></div>
+            </div>
+            <div class="text-container">
+              <p>Moodle подходит как для организации обучения в ВУЗах и учебных центрах, так для корпоративного обучения. Moodle относительна сложна в настройке, чем коммерческие платформы. Но ее администрирование может выйти дороже, за счет привлчения сторонних специалистов и содержания собственного сервера. В качестве аналога вы можете попробовать iSpring Learn.</p>
+            </div>
+            <div class="video-container">
+              <div class="box">
+                <iframe width="900" height="506" src="https://www.youtube.com/embed/hdbUjK6ULug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+        <div class="contents__cont-container" id="1_2"> 
+          <div class="title-container">
+            <h2>Возможности</h2>
+          </div>
+          <div class="content-container"> 
+            <div class="text-container">
+              <p><b>Система обмена сообщениями</b></p>
+              <p>Система дистанционного обучения Moodle предоставляет пользователям возможность обмена сообщениями.</p>
+              <p>Для организации общения пользователь системы дистанционного
+                обучения Moodle формирует собственный список собеседников. Для поиска
+                пользователей системы дистанционного обучения Moodle предусмотрен
+                соответствующий механизм. Найденного человека соответственно можно
+                добавить в список собеседников. Возможен также поиск по текстовым
+                сообщениям.
+                </p>
+              <p>Система обмена сообщениями Moodle предоставляет пользователю
+                возможность просмотреть историю обмена сообщениями с определенными
+                пользователями</p>
+            </div>
+            <div class="text-container">
+              <p><b>Блог</b></p>
+              <p>В системе дистанционного обучения Moodle блог - персональный
+                дневник пользователя, куда он заносит все что считает нужным (в том числе
+                свои мысли и суждения).</p>
+              <p>В зависимости от настроек, установленных администратором в системе
+                дистанционного обучения Moodle, может быть несколько вариантов
+                доступности блогов:</p>
+            </div>
+            <div class="list-item">
+              <ul>
+                <li>блоги доступны всем пользователям системы дистанционного обучения Moodle;</li>
+                <li>пользователи системы дистанционного обучения Moodle могут видеть блоги только участников своего дистанционного курса или участников своей группы;</li>
+                <li>блоги могут быть полностью запрещены.</li>
+               </ul>
+            </div>
+
+            <div class="text-container">
+              <p>Условия видимости отдельных записей блогов полностью определяется
+                пользователями системы дистанционного обучения Moodle. Настройки,
+                сделанные администратором системы дистанционного обучения Moodle,
+                имеют более высокий приоритет.</p>
+                <p>Пользователи системы дистанционного обучения Moodle могут
+                  задавать ключевые слова для своего блога и записей в блоге. Ключевые слова
+                  используются для поиска записей блога.</p>
+            </div>
+          </div>
+          <div class="image-container">
+             <div class="box"><img src="images/moodle3.jpg"/></div>
+          </div>
+          <div class="text-container">
+            <p><b>Чат</b></p>
+            <p>Система дистанционного обучения Moodle предоставляет
+              пользователям системы удобный инструмент организации общения - чат. Чат
+              является удобным средством организации взаимодействия преподавателя и
+              слушателей дистанционного обучения. Общение с помощью чата
+              осуществляется в режиме реального времени.</p>
+          </div>
+          <div class="image-container">
+            <div class="box"><img src="images/moodle4.jpg"/></div>
+         </div>
+          <div class="text-container">
+            <p><b>Календарь</b></p>
+            <p>Для удобства пользователя системы дистанционного обучения Moodle
+              в интерфейс системы может быть добавлен блок Календарь</p>
+            <p>В календаре выделяется сегодняшняя дата, а также цветом выделяются
+              даты, на которые запланированы определенные события. Пользователи
+              системы дистанционного обучения Moodle могут самостоятельно вносить в
+              календарь собственные события.</p>
+            <p>При внесении информации о событиях в рамках дистанционного курса,
+              данное событие отобразится во всех календарях пользователей системы
+              дистанционного обучения Moodle, зарегистрированных на данный
+              дистанционный курс. Также можно зарегистрировать события, которые
+              появятся в календарях всех пользователей системы дистанционного обучения
+              Moodle.
+              </p>
+          </div>
+          <div class="image-container">
+            <div class="box"><img src="images/moodle5.jpg"/></div>
+         </div>
+
+         
+            <div class="text-container">
+              <p><b>Поддержка контента</b></p>
+              <p>Moodle поддерживает самые популярные стандарты в электронном обучении: IMS, AICC и SCORM. Поддержка xAPI (Tin-Can) включается через плагин Logstore API.</p>
+              <p>Кроме того, в Moodle можно загружать презентации, изображения, видео, аудио и текстовые файлы.</p>
+            </div>
+            <div class="text-container">
+              <p><b>Создание контента</b></p>
+              <p>В Moodle можно создавать текстовые лекции и опросы. Если подключить плагин Interactive Content H5P, вы сможете добавлять учебный контент с H5P: веб-сервиса для создания интерактивных обучающих материалов.</p>
+            </div>
+          </div>
+          <div class="video-container">
+            <div class="box">
+              <iframe width="680" height="350" src="https://www.youtube.com/embed/MnZ75W8A4aQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+  
+        <div class="text-container">
+          <p><b>Управление пользователями</b></p>
+          <p>По умолчанию пользователям можно назначать роли и объединять их в группы. Все другие функции, вроде массового назначения курсов и настройки условий регистрации, добавляются с помощью плагинов.</p>
+          <p>В качестве примера приведем наиболее популярные:</p>
+        </div>
+        <div class="list-item">
+          <ul>
+            <li>Email-based self-registration with admin confirmation — включает саморегистрацию пользователей;</li>
+            <li>AutoEnrol — автоматически добавляет новых пользователей к прохождению курса;</li>
+            <li>File Upload — при регистрации пользователи могут загрузить уже готовую анкету с информацией о себе;</li>
+            <li>Inactive User Cleanup — удаляет неактивных пользователей из системы;</li>
+            <li>Merge User Accounts — позволяет объединять две учетные записи в одну.</li>
+           </ul>
+        </div>
+        <div class="text-container">
+          <p><b>Система отчетности</b></p>
+          <p>В Moodle вы можете настроить систему отчетов под себя — выбрать лишь те данные, которые нужны для анализа успеваемости учеников. Например, можно посмотреть, сколько времени они тратят на изучение курса, как часто заходят на платформу, какие ошибки в тестах допускают.</p>
+          <p>Набор отчетов в вашей системе, зависят от плагина, который вы установите. Всего их 38. Например, можно настроить статистику по успеваемости пользователей и их активности, популярности курсов, работе платформы (сбор ошибок, количество заходов и т.д.).</p>
+          <p>Так выглядит отчет по успеваемости, созданный с помощью My Feedback:</p>
+        </div>
+         <div class="image-container">
+            <div class="box"><img src="images/moodle2.jpg"/></div>
+         </div>
+
+
+        </div>
+        <div class="contents__cont-container" id="1_3"> 
+          <div class="title-container">
+            <h2>Особенности</h2>
+          </div>
+          <div class="content-container"> 
+            <div class="text-container">
+              <p>К основным особенностям данного сервиса можно отнести:</p> 
+            </div>
+            <div class="list-item">
+              <ul>
+                <li>Настройка платформы через плагины. Функционал и дизайн Moodle изменяется с помощью плагинов, которые можно бесплатно скачать из интернета или создать самому;</li>
+                <li>Система с открытым кодом. Разработку может вести кто угодно. Как правило, плагины разрабатывают сами пользователи, и затем выкладывают их в интернет для общего доступа;</li>
+                <li>Интеграция с другими сервисами. Moodle легко объединить с другими платформами, как, например, WordPress или вебинарами Zoom.</li>
+               </ul>
+            </div>
+        </div>
+        <div class="contents__cont-container" id="1_4"> 
+          <div class="title-container">
+            <h2>Достоинства</h2>
+          </div>
+          <div class="content-container"> 
+            <div class="text-container"> 
+              <p>iSpring Suite позволяет добавлять на слайд следующие типы интерактивностей:</p>
+            </div>
+            <div class="list-item"> 
+              <ul>
+                <li>бесплатность системы;</li>
+                <li>почти неограниченные возможности кастомизации;</li>
+                <li>возможность установки на любой сервер;</li>
+                <li>наличие хорошего функционала для обеспечения процесса обучения.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="contents__cont-container" id="1_5"> 
+          <div class="title-container">
+            <h2>Недостатки</h2>
+          </div>
+          <div class="content-container"> 
+            <div class="text-container"> 
+            </div>
+            <div class="list-item"> 
+              <ul>
+                <li>не очень привлекательный дизайн;</li>
+                <li>отсутствие профессиональной технической поддержки;</li>
+                <li>необходимость собирать систему с нуля;</li>
+                <li>сложность системы.</li>
+                <li>требует технических компетенций в области веб-разработки от преподавателя</li>
+              </ul>
+          </div>
+        </div>
+        <div class="contents__cont-container" id="1_6"> 
+          <div class="title-container">
+            <h2>Вывод</h2>
+          </div>
+          <div class="content-container"> 
+            <div class="text-container"> 
+              <p>Система управления обучением Moodle (ModularObject-OrientedDynamicLearningEnvironment) является свободно распространяемым продуктом. Система выделяется как простотой и удобством использования, так и своими возможностями. Кроме того, подробное изучение сравнительных обзоров различных систем управления обучением, включая систему Moodle, окончательно убедило нас, что данная система сможет обеспечить серьезный технический уровень внедрения электронных технологий. Очень важно, что система не статична, вокруг Moodle уже успешно развивается международное сообщество профессиональных IT-специалистов и преподавателей, занимающихся внедрением электронных технологий в процесс обучения. Также важным фактором в пользу выбора системы управления обучением Moodle явилось то, что данная среда изначально проектировалась для организации деятельностного обучения, в основе которого лежит взаимодействие всех участников учебного процесса.</p>
+            </div>
+            <div class="image-container">
+              <div class="box"><img src="images/moodle6.jpg"/></div>
+            </div>
+            <div class="text-container"> 
+              <p>Обычно обучение в системе Moodle проводится с использованием нескольких средств общения одновременно, что позволяет обучающемуся не только хорошо осваивать учебный материал, но и знакомиться в процессе обучения с новейшими достижениями и разработками в соответствующих областях знаний. Кроме того, обучающиеся обеспечены возможностью своевременно связаться с преподавателем в процессе обучения, задать вопрос, получить консультацию по непонятому разделу. А преподавателю позволяет легко реализовать постоянный контроль за учебной деятельностью студента, что вынуждает того работать равномерно и эффективно. За каждый пройденный раздел курса студент отчитывается перед преподавателем и только после этого может продвигаться дальше. В автоматизированной системе дистанционного обучения Moodle контроль приобретаемых знаний может быть очень детальным и практически постоянным.</p>
+              <p>Кроме того, дистанционные образовательные технологии позволяют осуществлять постоянный контакт обучаемого не только с преподавателем, но и с другими обучающимися, а значит, могут быть реализованы групповые работы (например, практические занятия), что дает обучающимся так необходимый сейчас всем навык командной работы.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer class="footer"></footer>
+    <button class="up" x-data="{}" @click="window.scrollTo(pageYOffset, 0);">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+        <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M335.083,271.083 L228.416,377.749c-4.16,4.16-9.621,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251c-8.341-8.341-8.341-21.824,0-30.165 L289.835,256l-91.584-91.584c-8.341-8.341-8.341-21.824,0-30.165s21.824-8.341,30.165,0l106.667,106.667 C343.424,249.259,343.424,262.741,335.083,271.083z"></path>
+      </svg>
+    </button>
+  </body>
+</html>

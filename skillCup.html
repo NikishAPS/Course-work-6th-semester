@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Course work - Skill Cup</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer="defer"></script>
+  </head>
+  <body>
+    <section class="main">
+      <section class="navigation">
+        <div class="navigation__nav-container" x-data="{isNav1 : false, isNav2 : false, isNav3 : false}">
+          <div class="title-container"> 
+            <p class="title-text">Навигация </p>
+            <hr class="title-line"/>
+          </div>
+          <div class="point-container"> <a class="point-text" href="starter.html">Стартовая страница </a></div>
+          <div class="point-container"> <a class="point-text" href="start.html">Введение </a></div>
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav1 = !isNav1">Moodle</p>
+            <div class="next-point-container" x-show="isNav1">
+              <div class="mini-point-container"> <a href="moodle.html#1_1">Определение</a></div>
+              <div class="mini-point-container"> <a href="moodle.html#1_2">Возможности</a></div>
+              <div class="mini-point-container"> <a href="moodle.html#1_3">Особенности</a></div>
+              <div class="mini-point-container"> <a href="moodle.html#1_4">Достоинства</a></div>
+              <div class="mini-point-container"> <a href="moodle.html#1_5">Недостатки</a></div>
+              <div class="mini-point-container"> <a href="moodle.html#1_6">Вывод</a></div>
+            </div>
+          </div>
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav2 = !isNav2">WebSoft HCM</p>
+            <div class="next-point-container" x-show="isNav2"> 
+              <div class="mini-point-container"> <a href="webTutor.html#2_1">Определение</a></div>
+              <div class="mini-point-container"> <a href="webTutor.html#2_2">Возможности</a></div>
+              <div class="mini-point-container"> <a href="webTutor.html#2_3">Особенности</a></div>
+              <div class="mini-point-container"> <a href="webTutor.html#2_4">Достоинства</a></div>
+              <div class="mini-point-container"> <a href="webTutor.html#2_5">Недостатки</a></div>
+              <div class="mini-point-container"> <a href="webTutor.html#2_6">Вывод</a></div>
+            </div>
+          </div>
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav3 = !isNav3">Skill Cup</p>
+            <div class="next-point-container" x-show="isNav3"> 
+              <div class="mini-point-container"> <a href="skillCup.html#3_1">Определение</a></div>
+              <div class="mini-point-container"> <a href="skillCup.html#3_2">Возможности</a></div>
+              <div class="mini-point-container"> <a href="skillCup.html#3_3">Особенности</a></div>
+              <div class="mini-point-container"> <a href="skillCup.html#3_4">Достоинства</a></div>
+              <div class="mini-point-container"> <a href="skillCup.html#3_5">Недостатски</a></div>
+              <div class="mini-point-container"> <a href="skillCup.html#3_6">Вывод</a></div>
+            </div>
+          </div>
+          <div class="point-container"> <a class="point-text" href="finish.html">Заключение</a></div>
+          <div class="point-container"> <a class="point-text" href="refs.html">Список использованных источников</a></div>
+        </div>
+      </section>
+      <section class="contents"> 
+        <div class="contents__cont-container" id="3_1">
+          <div class="title-container">
+            <h2>Определение</h2>
+          </div>
+          <div class="content-container"> 
+            <div class="text-container"> 
+              <p><a href="https://www.skillcup.ru/">Skill Cup</a> — платформа для современного электронного обучения сотрудников на личных устройствах: смартфонах, планшетах или компьютерах. Есть приложения для iOS и Android. Курсы разбиваются на небольшие фрагменты на 3–7 минут, которые легко запомнить.</p>
+            </div>
+            <div class="image-container">
+              <div class="box"><img src="images/skillCup1.jpg"/></div>
+            </div>
+          </div>
+        </div>
+        <div class="contents__cont-container" id="3_2"> 
+          <div class="title-container">
+            <h2>Возможности</h2>
+          </div>
+          <div class="content-container"> 
+            <div class="text-container"> 
+              <p>Основные возможности Skill Cup:</p>  
+            </div>
+            <div class="list-item">
+              <ul>
+                <li>адаптация новичков;</li>
+                <li>обучение сотрудников регламентам и продуктам;</li>
+                <li>оперативне информирование команды;</li>
+                <li>поддержка очного тренинга;</li>
+                <li>проверка знаний;</li>
+                <li>поддержка дистанционного обучения.</li>
+              </ul>
+            </div>
+            <div class="video-container">
+              <div class="box">
+                <iframe width="900" height="506" src="https://www.youtube.com/embed/Sw-ze_BMuEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </div>
+
+          </div>
+        </div>
+
+
+
+        <div class="contents__cont-container" id="3_3"> 
+          <div class="title-container">
+            <h2>Особенности</h2>
+          </div>
+          <div class="content-container"> 
+            <div class="text-container"> 
+              <p><b>Доступ к платформе сразу после покупки.</b></p>
+              <p>Для использования Skill Cup не нужна интеграция. Доступ осуществляется сразу после покупки.</p>
+            </div>
+            <div class="image-container">
+              <div class="box"><img src="images/skillCup2.jpg"/></div>
+            </div>
+            <div class="text-container">
+              <p><b>Создание курсов одним кликом.</b></p>
+              <p>Курс создается буквально в один клик, после чего пользователь может сразу же приступить к созданию контента.</p>
+            </div>
+            <div class="image-container">
+              <div class="box"><img src="images/skillCup3.jpg"/></div>
+            </div>
+            <div class="text-container">
+              <p><b>Добавление контента любого типа.</b></p>
+              <p>Сервис предоставляет 12 типов контента для разных целей. Пользователь может выбрать то, что, по его мнению, в поможет лучше усвоить материал.</p>
+            </div>
+            <div class="image-container">
+              <div class="box"><img src="images/skillCup4.jpg"/></div>
+            </div>
+            <div class="text-container">
+              <p><b>Контроль результатов обучения.</b></p>
+              <p>Сервис позволяет контролировать обучающихся сотрудников в реальном времени.</p>
+            </div>
+            <div class="image-container">
+              <div class="box"><img src="images/skillCup5.jpg"/></div>
+            </div>
+          </div>
+        </div>
+        <div class="contents__cont-container" id="3_4"> 
+          <div class="title-container">
+            <h2>Достоинства</h2>
+          </div>
+          <div class="content-container"> 
+            <div class="text-container">
+              <p><b>Простота использования.</b></p>
+              <p>Чтобы создать курс, вам не потребуются специальные знания в педдизайне или программировании. Интерфейс интуитивно понятный, сразу видно, куда нажимать и как будет выглядеть тренировка для учеников.</p>
+            </div>
+
+            <div class="text-container">
+              <p><b>Современный дизайн.</b></p>
+              <p>Выглядит свежо и приятно, а не как сайт из начала нулевых. В отличие от многих конкурентов.</p>
+            </div>
+
+            <div class="text-container">
+              <p><b>Мобильное обучение.</b></p>
+              <p>Все тренировки ученики могут проходить со смартфона в мобильном приложении по дороге домой или на работу. Обучение не будет занимать рабочее время.</p>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="contents__cont-container" id="3_5"> 
+          <div class="title-container">
+            <h2>Недостатки</h2>
+          </div>
+          <div class="text-container">
+            <p><b>Ограниченный функционал.</b></p>
+            <p>Всё, что вам доступно — это видео, тексты и тесты. Нет диалогового тренажера, чтобы сотрудник мог на практике учиться работать с клиентом, например. Интерактивные презентации тоже не получится создать.</p>
+          </div>
+          <div class="text-container">
+            <p><b>Нельзя провести объективную аттестацию.</b></p>
+            <p>Вы, конечно, можете составить и назначить сотрудникам тестирование. Но нет возможности сделать разные варианты тестов, ограничить их по времени или как-то ещё предотвратить списывание.</p>
+          </div>
+          <div class="text-container">
+            <p><b>Нет вебинаров.</b></p>
+            <p>Если вам необходимо проводить прямые трансляции для учеников или давать мастер-классы, Skill Cup для этого не подойдёт.</p>
+          </div>
+          <div class="text-container">
+            <p><b>Нет геймификации.</b></p>
+            <p>Нельзя награждать лучших за прохождение курсов баллами и подарками. Также у учеников нет общего рейтинга, в котором они могли бы соревноваться между собой.</p>
+          </div>
+          <div class="text-container">
+            <p><b>Нет защиты от списывания.</b></p>
+            <p>Сотрудники будут проходить одни и те же тесты с одинаковыми вопросами и вариантами ответов. Нельзя даже перемешать готовые ответы. Это не позволит объективно оценить каждого ученика.</p>
+          </div>
+        </div>
+        <div class="contents__cont-container" id="3_6"> 
+          <div class="title-container">
+            <h2>Вывод</h2>
+          </div>
+          
+
+
+          <div class="content-container">
+            <div class="text-container">
+              <p>Skill Cup подойдёт для несложных задач:</p>
+            </div>
+            <div class="list-item">
+              <ul>
+               <li>ввести в курс дела новичков;</li>
+               <li>обновить знания у сотрудников;</li>
+               <li>обучить продуктам компании;</li>
+               </ul>
+            </div>
+
+            <div class="text-container">
+              <p>Но система не позволит создать сложное многоступенчатое обучение по разным темам с помощью интерактивных тренажеров, презентаций и вебинаров.</p>
+            <p>Также вы не сможете быть уверены в объективной оценке знаний и навыков ваших сотрудников, потому что в системе нет защиты от списывания.</p>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer class="footer"></footer>
+    <button class="up" x-data="{}" @click="window.scrollTo(pageYOffset, 0);">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+        <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M335.083,271.083 L228.416,377.749c-4.16,4.16-9.621,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251c-8.341-8.341-8.341-21.824,0-30.165 L289.835,256l-91.584-91.584c-8.341-8.341-8.341-21.824,0-30.165s21.824-8.341,30.165,0l106.667,106.667 C343.424,249.259,343.424,262.741,335.083,271.083z"></path>
+      </svg>
+    </button>
+  </body>
+</html>

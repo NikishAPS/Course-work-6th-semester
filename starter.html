@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Course work</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer="defer"></script>
+  </head>
+  <body>
+    <section class="main">
+      <section class="navigation">
+        <div class="navigation__nav-container" x-data="{isNav1 : false, isNav2 : false, isNav3 : false}">
+          <div class="title-container"> 
+            <p class="title-text">Навигация </p>
+            <hr class="title-line"/>
+          </div>
+          <div class="point-container"> <a class="point-text" href="starter.html">Стартовая страница </a></div>
+          <div class="point-container"> <a class="point-text" href="start.html">Введение </a></div>
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav1 = !isNav1">Moodle</p>
+            <div class="next-point-container" x-show="isNav1">
+              <div class="mini-point-container"> <a href="moodle.html#1_1">Определение</a></div>
+              <div class="mini-point-container"> <a href="moodle.html#1_2">Возможности</a></div>
+              <div class="mini-point-container"> <a href="moodle.html#1_3">Особенности</a></div>
+              <div class="mini-point-container"> <a href="moodle.html#1_4">Достоинства</a></div>
+              <div class="mini-point-container"> <a href="moodle.html#1_5">Недостатки</a></div>
+              <div class="mini-point-container"> <a href="moodle.html#1_6">Вывод</a></div>
+            </div>
+          </div>
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav2 = !isNav2">WebSoft HCM</p>
+            <div class="next-point-container" x-show="isNav2"> 
+              <div class="mini-point-container"> <a href="webTutor.html#2_1">Определение</a></div>
+              <div class="mini-point-container"> <a href="webTutor.html#2_2">Возможности</a></div>
+              <div class="mini-point-container"> <a href="webTutor.html#2_3">Особенности</a></div>
+              <div class="mini-point-container"> <a href="webTutor.html#2_4">Достоинства</a></div>
+              <div class="mini-point-container"> <a href="webTutor.html#2_5">Недостатки</a></div>
+              <div class="mini-point-container"> <a href="webTutor.html#2_6">Вывод</a></div>
+            </div>
+          </div>
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav3 = !isNav3">Skill Cup</p>
+            <div class="next-point-container" x-show="isNav3"> 
+              <div class="mini-point-container"> <a href="skillCup.html#3_1">Определение</a></div>
+              <div class="mini-point-container"> <a href="skillCup.html#3_2">Возможности</a></div>
+              <div class="mini-point-container"> <a href="skillCup.html#3_3">Особенности</a></div>
+              <div class="mini-point-container"> <a href="skillCup.html#3_4">Достоинства</a></div>
+              <div class="mini-point-container"> <a href="skillCup.html#3_5">Недостатски</a></div>
+              <div class="mini-point-container"> <a href="skillCup.html#3_6">Вывод</a></div>
+            </div>
+          </div>
+          <div class="point-container"> <a class="point-text" href="finish.html">Заключение</a></div>
+          <div class="point-container"> <a class="point-text" href="refs.html">Список использованных источников</a></div>
+        </div>
+      </section>
+      <section class="contents"> 
+        <div class="contents__cont-container"> 
+          <div class="title-container">
+            <h1>Возможности ДИТ в корпоративном обучении</h1>
+          </div>
+          <div class="content-container"> 
+            <div class="text-container"> 
+              <p>Данный сайт разработан студентом группы КТбо3-4 Соромытько Н.А.</p>
+            </div>
+            <div class="image-container">
+              <div class="logo-container"><img class="logo" src="https://naked-science.ru/includ092119937/123.jpg"/></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
+<footer class="footer"></footer>
