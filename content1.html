@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Course work - Network technologies</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer="defer"></script>
+  </head>
+  <body>
+    <section class="main">
+      <section class="navigation">
+        <div class="navigation__nav-container" x-data="{isNav1 : false, isNav2 : false, isNav3 : false}">
+          <div class="title-container"> 
+            <p class="title-text">Навигация </p>
+            <hr class="title-line"/>
+          </div>
+          <div class="point-container"> <a class="point-text" href="starter.html">Стартовая страница </a></div>
+          <div class="point-container"> <a class="point-text" href="start.html">Введение </a></div>
+          
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav1 = !isNav1">Сетевые технологии</p>
+            <div class="next-point-container" x-show="isNav1">
+              <div class="mini-point-container"> <a href="content1.html#1_1">Введение</a></div>
+              <div class="mini-point-container"> <a href="content1.html#1_2">Онлайн-семинар</a></div>
+              <div class="mini-point-container"> <a href="content1.html#1_3">Виртуальный класс</a></div>
+              <div class="mini-point-container"> <a href="content1.html#1_4">Тестирование</a></div>
+              <div class="mini-point-container"> <a href="content1.html#1_5">Система обмена сообщениями</a></div>
+              <div class="mini-point-container"> <a href="content1.html#1_6">E-learning</a></div>
+              <div class="mini-point-container"> <a href="content1.html#1_7">Сервисы</a></div>
+            </div>
+          </div>
+          
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav2 = !isNav2">кейс-технологии</p>
+            <div class="next-point-container" x-show="isNav2"> 
+              <div class="mini-point-container"> <a href="content2.html#2_1">Введение</a></div>
+              <div class="mini-point-container"> <a href="content2.html#2_2">Возможности</a></div>
+              <div class="mini-point-container"> <a href="content2.html#2_3">Особенности</a></div>
+              <div class="mini-point-container"> <a href="content2.html#2_4">Преимущества</a></div>
+              <div class="mini-point-container"> <a href="content2.html#2_5">Недостатки</a></div>
+              <div class="mini-point-container"> <a href="content2.html#2_6">Сервисы</a></div>
+            </div>
+          </div>
+          
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav3 = !isNav3">TV-технологии</p>
+            <div class="next-point-container" x-show="isNav3"> 
+              <div class="mini-point-container"> <a href="content3.html#3_1">Введение</a></div>
+              <div class="mini-point-container"> <a href="content3.html#3_2">Особенности</a></div>
+              <div class="mini-point-container"> <a href="content3.html#3_3">Преимущества</a></div>
+              <div class="mini-point-container"> <a href="content3.html#3_4">Недостатки</a></div>
+              <div class="mini-point-container"> <a href="content3.html#3_5">Сервисы</a></div>
+            </div>
+          </div>
+
+          <div class="point-container"> <a class="point-text" href="finish.html">Заключение</a></div>
+          <div class="point-container"> <a class="point-text" href="refs.html">Список использованных источников</a></div>
+        </div>
+      </section>
+      <section class="contents"> 
+
+        <!--Определение-->
+        <div class="contents__cont-container" id="1_1">
+          <div class="title-container">
+            <h2>Введение</h2>
+          </div>
+          <div class="content-container">
+            <div class="text-container">
+            <p>К <b>сетевым технологиям</b> относятся интернет-технология и технологии, использующие возможности локальных и глобальных вычислительных сетей. Интернет-технологии "Всемирная паутина" используется для обеспечения учащихся учебно-методическим материалом, а также для интерактивного взаимодействия между преподавателем и обучаемыми. Данная технология имеет ряд существенных преимуществ перед другими. Она позволяет проходить обучение по индивидуальному расписанию, имея постоянный контакт как с преподавателем, так и с другими студентами и администрацией учебного центра. Возможность связи "многих-со-многими" является принципиальным отличием интернет-технологии от иных технологий дистанционно гообучения: такое взаимодействие создает эффект "присутствия" и порождает явление "электронного" кампуса - виртуального университета.</p>
+          </div>
+        </div>
+        </div>
+
+
+        <!--Онлайн-конференция-->
+        <div class="contents__cont-container" id="1_2">
+          <div class="title-container">
+            <h2>Онлайн-конференция</h2>
+          </div>
+          <div class="content-container">
+            <div class="text-container">
+              <p>Онлайн-семинар или вебинар — это разновидность веб-конференции, проведение онлайн-встреч или презентаций через Интернет. Во время веб-конференции каждый из участников находится у своего компьютера, а связь между ними поддерживается через Интернет посредством загружаемого приложения, установленного на компьютере каждого участника, или через веб-приложение. В последнем случае, чтобы присоединиться к конференции, нужно просто ввести URL (адрес сайта) в окне браузера.</p>
+            </div>
+            <div class="image-container">
+              <div class="box"><img src="images/image1-1.jpg"/></div>
+            </div>
+            <div class="text-container">
+              <p>Данная технология очень частно применяется при дистанционном корпоративном обучении. Она позволяет поддерживать визуальный контакт со многими сотрудниками одновременно, что благополучно сказывается на обучении.</p>
+              <p>Несмотря на очивидные достоинтва, данная система имеет и недостатки. Например, такой подход в обучении персонала не позволяет полностью контролировать каждого cотрудника.</p>
+            </div>
+        </div>
+        </div>
+
+        
+        <!--Виртуальный класс-->
+        <div class="contents__cont-container" id="1_3">
+          <div class="title-container">
+            <h2>Виртуальный класс</h2>
+          </div>
+          <div class="content-container">
+              <div class="text-container">
+                <p><b>Виртуальный класс</b> — это технология проведения синхронных онлайн-занятий в виртуальной среде обучения. Также в этом значении используют термины "smart virtual classroom" и "digital classroom".</p>
+              </div>
+
+          <div class="image-container">
+            <div class="box"><img src="images/image1-2.jpg"/></div>
+          </div>
+
+          <div class="text-container">
+            <p>Как и при очном обучении в классе, ученик и учитель одновременно заходят в виртуальную комнату и работают над материалом (иначе это называется синхронным обучением). Преподаватель показывает ученику текст, иллюстрации и презентации на интерактивной доске, которые одновременно появляются в электронном блокноте обучаемого.</p>
+            <p>Ведущий занятие может включить демонстрацию рабочего стола своего компьютера, чтобы ученик видел, какие действия он совершает. Когда урок заканчивается, виртуальный класс сохраняется оффлайн, и к пройденному материалу можно вернуться позже</p>
+          </div>
+
+          <div class="list-item">
+            <div class="text-container">
+              <p>Преимущества виртуального класса:</p>
+            </div>
+            <ul>
+              <li>проведение занятия из любой точки мира;</li>
+              <li>наличие интерактивных интрументов</li>
+            </ul>
+          </div>
+          <div class="list-item">
+            <div class="text-container">
+              <p>Недостатки виртуального класса:</p>
+            </div>
+            <ul>
+              <li>ограничена возможность задавать вопросы преподавателю по мере изложения учебного материала;</li>
+              <li>успешность участия зависит от технических возможностей компьютера обучаемого и преподавателя.</li>
+            </ul>
+          </div>
+
+        </div>
+        </div>
+
+
+        <!--Тестирование-->
+        <div class="contents__cont-container" id="1_4">
+          <div class="title-container">
+            <h2>Тестирование</h2>
+          </div>
+          <div class="content-container">
+            <div class="text-container">
+              <p><b>Тестирование</b> — это одновременно и метод, и результат педагогического измерения. Данная технология подразумевает под собой налие различных инструментов, обеспечивающих проверку знаний сотрудников путем прохождения различных тестов и выполнения заданий.</p>
+            </div>
+            <div class="image-container">
+              <div class="box"><img src="images/image1-3.jpg"/></div>
+            </div>
+            <div class="text-container">
+              <p>Достоинством дистанционного тестирования является полная автоматизация процесса тестирования, т. е. преподавателю не приходится вручную проверять каждую работы. Достаточно лишь единожды загрузить задания и настроить систему, после чего система автоматически осуществляет проверку результатов и анализирует знания обучающихся.</p>
+              <p>Главным недостатком дистанционного тестирования является отсутствие контроля обучающихся, т. е. отсутствие гарантии самостоятельного выполнения работы.</p> 
+            </div>
+          </div>
+        </div>
+
+        <!--Система обмена сообщениями-->
+        <div class="contents__cont-container" id="1_5">
+          <div class="title-container">
+            <h2>Система обмена сообщениями</h2>
+          </div>
+          <div class="content-container">
+            <div class="text-container">
+              <p><b>Система обмена сообщениями</b> - одна из разновидностей технологий коммуникации в Интернете наряду с электронной почтой, пиринговыми сетями (p2p) и видеоконференциями. В основу положен принцип мгновенной пересылки сообщений (и другого контента) преимущественно между двумя участниками.</p>
+            </div>
+            <div class="image-container">
+              <div class="box"><img src="images/image1-4.jpg"/></div>
+            </div>
+          
+
+            <div class="list-item">
+              <div class="text-container">
+                <p>Достоинства:</p>
+              </div>
+              <ul>
+                <li>коммуницирование практически в любое время суток;</li>
+                <li>обеспечение обмена документами;</li>
+                <li>хранение истории общения.</li>
+              </ul>
+            </div>
+
+            <div class="list-item">
+              <div class="text-container">
+                <p>Недостатки:</p>
+              </div>
+              <ul>
+                <li>отсутствие контроля обучающихся;</li>
+                <li>отсутствие интерактивности;</li>
+                <li>невозможность обсуждения серьезных задач</li>
+                <li>возникновение недопониманий с обеих сторон.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!--e-learning-->
+        <div class="contents__cont-container" id="1_6">
+          <div class="title-container">
+            <h2>E-earlening</h2>
+          </div>
+          <div class="content-container">
+            <div class="text-container">
+              <p><b>E-Learning</b>(электронное обучение) — обучение с помощью интернета и мультимедиа.</p>
+              <p>В электронном обучении главной характеристикой является использование различных мультимедийный форматов, таких как видео, аудио, интерактивные тесты и тренажеры, гаджеты и другие. При этом оно не обязательно происходит на дистанции – очные курсы при использовании описанных выше видов учебных материалов также относятся к e-learning.</p>
+            </div>
+            <div class="image-container">
+              <div class="box"><img src="images/image1-5.jpg"/></div>
+            </div>
+          
+
+            <div class="list-item">
+              <div class="text-container">
+                <p>Достоинства:</p>
+              </div>
+              <ul>
+                <li>эффективность обучения за счет мультимедиа компонентов;</li>
+                <li>возможность отрабатывать практические навыки;</li>
+                <li>высокая вовлеченность в обучение.</li>
+              </ul>
+            </div>
+
+            <div class="list-item">
+              <div class="text-container">
+                <p>Недостатки:</p>
+              </div>
+              <ul>
+                <li>технические требования;</li>
+                <li>необходимость в минимальных технических навыках.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--Сервисы-->
+        <div class="contents__cont-container" id="1_7">
+          <div class="title-container">
+            <h2>Сервисы</h2>
+          </div>
+          <div class="content-container">
+            <div class="text-container">
+              <p>Большинство перечисленных выше технологий реализованы в такой корпоративной платформе, как <b><a href="https://teams.microsoft.com/">Microsoft Teams</a></b>. Данный сервис обладает большим функционалом и часто используется в корпоративных целях. С его помочью многие предприятия дистанционно выполняют различные бизнес-дела.</p>  
+            </div>
+            <div class="image-container">
+              <div class="box"><img src="images/image1-6.jpg"/></div>
+            </div>
+          
+            <div class="video-container">
+              <div class="box">
+                <iframe width="900" height="506" src="https://www.youtube.com/embed/tZkpDkIdzNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </div>
+            <div class="list-item">
+              <div class="text-container">
+                <p>Функционал платформы Microsoft Teams:</p>
+              </div>
+              <ul>
+                <li>веб-конференции;</li>
+                <li>виртуальный класс;</li>
+                <li>чат;</li>
+                <li>тестирование.</li>
+              </ul>
+            </div>
+
+            <div class="text-container">
+              <p>Также стоит упомянуть о таком сервисе, как <b><a href="https://moodle.org/">Moodle</a></b>, который является одним из лучший серверов электронного обучения.</p>
+            </div>
+
+            <div class="image-container">
+              <div class="box"><img src="images/image1-7.jpg"/></div>
+            </div>
+            <div class="video-container">
+              <div class="box">
+                <iframe width="900" height="506" src="https://www.youtube.com/embed/o3HIbpTBlps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </div>
+
+          <div class="list-item">
+            <div class="text-container">
+              <p>Функционал платформы Moodle:</p>
+            </div>
+            <ul>
+              <li>интеграция с другими системами и сервисами;</li>
+              <li>загрузка любого контента обучения;</li>
+              <li>мобильное обучение;</li>
+              <li>тестирование;</li>
+              <li>чат;</li>
+              <li>отчетность.</li>
+            </ul>
+          </div>
+
+          </div>
+        </div>
+
+
+      </section>
+    </section>
+    <footer class="footer"></footer>
+    <button class="up" x-data="{}" @click="window.scrollTo(pageYOffset, 0);">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+        <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M335.083,271.083 L228.416,377.749c-4.16,4.16-9.621,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251c-8.341-8.341-8.341-21.824,0-30.165 L289.835,256l-91.584-91.584c-8.341-8.341-8.341-21.824,0-30.165s21.824-8.341,30.165,0l106.667,106.667 C343.424,249.259,343.424,262.741,335.083,271.083z"></path>
+      </svg>
+    </button>
+  </body>
+</html>

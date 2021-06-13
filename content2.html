@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Course work - Case Study</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer="defer"></script>
+  </head>
+  <body>
+    <section class="main">
+      <section class="navigation">
+        <div class="navigation__nav-container" x-data="{isNav1 : false, isNav2 : false, isNav3 : false}">
+          <div class="title-container"> 
+            <p class="title-text">Навигация </p>
+            <hr class="title-line"/>
+          </div>
+          <div class="point-container"> <a class="point-text" href="starter.html">Стартовая страница </a></div>
+          <div class="point-container"> <a class="point-text" href="start.html">Введение </a></div>
+          
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav1 = !isNav1">Сетевые технологии</p>
+            <div class="next-point-container" x-show="isNav1">
+              <div class="mini-point-container"> <a href="content1.html#1_1">Введение</a></div>
+              <div class="mini-point-container"> <a href="content1.html#1_2">Онлайн-семинар</a></div>
+              <div class="mini-point-container"> <a href="content1.html#1_3">Виртуальный класс</a></div>
+              <div class="mini-point-container"> <a href="content1.html#1_4">Тестирование</a></div>
+              <div class="mini-point-container"> <a href="content1.html#1_5">Система обмена сообщениями</a></div>
+              <div class="mini-point-container"> <a href="content1.html#1_6">E-learning</a></div>
+              <div class="mini-point-container"> <a href="content1.html#1_7">Сервисы</a></div>
+            </div>
+          </div>
+          
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav2 = !isNav2">кейс-технологии</p>
+            <div class="next-point-container" x-show="isNav2"> 
+              <div class="mini-point-container"> <a href="content2.html#2_1">Введение</a></div>
+              <div class="mini-point-container"> <a href="content2.html#2_2">Возможности</a></div>
+              <div class="mini-point-container"> <a href="content2.html#2_3">Особенности</a></div>
+              <div class="mini-point-container"> <a href="content2.html#2_4">Преимущества</a></div>
+              <div class="mini-point-container"> <a href="content2.html#2_5">Недостатки</a></div>
+              <div class="mini-point-container"> <a href="content2.html#2_6">Сервисы</a></div>
+            </div>
+          </div>
+          
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav3 = !isNav3">TV-технологии</p>
+            <div class="next-point-container" x-show="isNav3"> 
+              <div class="mini-point-container"> <a href="content3.html#3_1">Введение</a></div>
+              <div class="mini-point-container"> <a href="content3.html#3_2">Особенности</a></div>
+              <div class="mini-point-container"> <a href="content3.html#3_3">Преимущества</a></div>
+              <div class="mini-point-container"> <a href="content3.html#3_4">Недостатки</a></div>
+              <div class="mini-point-container"> <a href="content3.html#3_5">Сервисы</a></div>
+            </div>
+          </div>
+
+          <div class="point-container"> <a class="point-text" href="finish.html">Заключение</a></div>
+          <div class="point-container"> <a class="point-text" href="refs.html">Список использованных источников</a></div>
+        </div>
+      </section>
+      <section class="contents"> 
+
+        <!--Определение-->
+        <div class="contents__cont-container" id="2_1"> 
+          <div class="title-container">
+            <h2>Определение</h2>
+          </div>
+          <div class="content-container">
+            <div class="text-container"> 
+              <p>При <b>кейс-технологии</b> учебно-методические материалы комплектуются в специальный набор (кейс). Этот набор пересылается учащемуся для самостоятельного изучения. Общение с преподавателями-консультантами осуществляется в созданных для этих целей региональных учебных центрах. К данной группе может быть отнесена традиционная технология заочного обучения. Заочное обучение по почте существует более 100 лет. Считается, что при достаточной мотивации обучаемый в состоянии самостоятельно изучить и освоить значительный объем материала по широкому кругу дисциплин, если такое обучение подкреплено содержательным кейсом.</p>
+            </div>
+            <div class="image-container">
+              <div class="box"><img src="images/image2-1.jpg"/></div>
+            </div>
+            <div class="video-container">
+              <div class="box">
+                <iframe width="900" height="506" src="https://www.youtube.com/embed/04hzL0TXZ4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+          </div>
+            </div>
+            
+         
+        </div>
+
+         <!--Возможности-->
+         <div class="contents__cont-container" id="2_2"> 
+          <div class="title-container">
+            <h2>Возможности</h2>
+          </div>
+          <div class="content-container">
+            <div class="text-container">
+              <p>Бизнес-кейс — это специально подготовленный учебный материал, который отражает конкретную проблемную бизнес-ситуацию, требующую управленческих решений со стороны менеджмента компании. В ходе занятий преподаватель направляет студентов в поиске таких решений.</p>
+            </div>
+
+            <div class="list-item">
+              <div class="text-container">
+                <p>Решаемые задачи:</p>
+              </div>
+              <ul>
+                <li>выяснение типа, характера проблемы, ее основных системных характеристик;</li>
+                <li>выявление закономерностей развития проблемы, ее последствий;</li>
+                <li>диагностика принципиальной разрешимости проблемы;</li>
+                <li>определение ресурсов, которые необходимы для разрешения проблемы;</li>
+                <li>выработка организационно-управленческих технологий разрешения проблемы;</li>
+              </ul>
+              </div>
+          </div>
+        </div>
+
+
+         <!--Особенности-->
+         <div class="contents__cont-container" id="2_3"> 
+          <div class="title-container">
+            <h2>Особенности</h2>
+          </div>
+          <div class="content-container">
+            <div class="list-item">
+              <div class="text-container">
+                <p>Основные особенностям Кейс-технологии:</p>
+              </div>
+              <ul>
+                <li>метод представляет собой разновидность исследовательской аналитической технологии;</li>
+                <li>метод case-study выступает как технология коллективного обучения;</li>
+                <li>метод case-study в обучении можно рассматривать как синергетическую технологию, суть которой заключается вподготовке процедур погружения группы в ситуацию,инсайтного озарения, обмена открытиями и т.п.;</li>
+                <li>метод case-study интегрирует в себе технологии развивающего обучения;</li>
+                <li>метод case-study выступает как специфическая разновидность проектной технологии;</li>
+                <li>метод case-study концентрирует в себе значительные достижения технологии «создания успеха».</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+
+      <!--Преимущества-->
+      <div class="contents__cont-container" id="2_4"> 
+        <div class="title-container">
+          <h2>Преимущества</h2>
+        </div>
+        <div class="content-container">
+          <div class="text-container">
+            <p>Преимущества case-study очевидны. Он позволяет обучаться на реальных проблемных ситуациях и получать соответствующие навыки</p>
+      </div>
+    </div>
+    </div>
+
+
+    <!--Недостатки-->
+    <div class="contents__cont-container" id="2_5"> 
+      <div class="title-container">
+        <h2>Недостатки</h2>
+      </div>
+      <div class="content-container">
+        <div class="text-container">
+        <p>Недостатки не так очевидны и о них практически не пишут. Попробуем перечислить недостатки метода case-study.</p>
+        </div>
+
+        <div class="text-container">
+          <p><b>Дороговизна метода.</b>Так, студенты дневного отделения HBS (школа МВА) платят $33650 в год. В
+            Стэнфорде год обучения стоит $36250, в Уортоне - $37300 (обучение обычно длится два года). А стоимость обучения покрывает лишь 40-70% расходов учебного
+            заведения. Поэтому школы и университеты используют пожертвования своих
+            выпускников. Так, 30% выпускников Гарварда вносят пожертвования.
+            Стэнфорд - 37%. Школа Нотр-Дам - 41%.</p>
+          </div>
+
+          <div class="text-container">
+            <p><b>Сложность подготовки кейсов.</b> При подготовке кейса сложно получить достоверную информацию о реальном
+              бизнесе, его проблемах и решениях. Многие фирмы и корпорации отказываются
+              разглашать информацию.</p>
+            </div>
+
+            <div class="text-container">
+              <p><b>Отсутствие инструментальных методик и алгоритмов постановки и решения
+                творческих задач.</b> В кейсах, как правило, делается акцент на исходной ситуации и на предлагаемых
+                студентами решениях. Затем их сравнивают с реальными решениями. На самом
+                процессе поиска реального решения в реальных условиях в методе case-study акцент
+                не делается.</p>
+              </div>
+  </div>
+  </div>
+
+
+<!--Сервисы-->
+<div class="contents__cont-container" id="2_6"> 
+  <div class="title-container">
+    <h2>Сервисы</h2>
+  </div>
+  <div class="content-container">
+    <div class="text-container">
+      <p><b><a href="https://roistat.com/rublog/cases/">Roistat</a></b> - сервис сквозной бизнес-аналитики. Roistat заявляют, что с их помощью можно сократить рекламный бюджет на 67%. И все потому, что система способна не просто отражать данные о посетителях Вашего сайта.</p>
+    </div>
+
+    <div class="image-container">
+      <div class="box"><img src="images/image2-3.jpg"/></div>
+    </div>
+    <div class="text-container">
+      <p>Данный сервис предоставляет большое количество кейсов различных компаний. Обучение с помощью кейсов считается очень эффективным, так как сотрудники учатся на реальных ситуациях, и при этом риски минимальны.</p>
+</div>
+    </div>
+    </div>
+
+
+
+
+
+      </section>
+    </section>
+    <footer class="footer"></footer>
+    <button class="up" x-data="{}" @click="window.scrollTo(pageYOffset, 0);">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+        <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M335.083,271.083 L228.416,377.749c-4.16,4.16-9.621,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251c-8.341-8.341-8.341-21.824,0-30.165 L289.835,256l-91.584-91.584c-8.341-8.341-8.341-21.824,0-30.165s21.824-8.341,30.165,0l106.667,106.667 C343.424,249.259,343.424,262.741,335.083,271.083z"></path>
+      </svg>
+    </button>
+  </body>
+</html>

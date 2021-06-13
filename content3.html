@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Course work - TV technologies</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer="defer"></script>
+  </head>
+  <body>
+    <section class="main">
+      <section class="navigation">
+        <div class="navigation__nav-container" x-data="{isNav1 : false, isNav2 : false, isNav3 : false}">
+          <div class="title-container"> 
+            <p class="title-text">Навигация </p>
+            <hr class="title-line"/>
+          </div>
+          <div class="point-container"> <a class="point-text" href="starter.html">Стартовая страница </a></div>
+          <div class="point-container"> <a class="point-text" href="start.html">Введение </a></div>
+          
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav1 = !isNav1">Сетевые технологии</p>
+            <div class="next-point-container" x-show="isNav1">
+              <div class="mini-point-container"> <a href="content1.html#1_1">Введение</a></div>
+              <div class="mini-point-container"> <a href="content1.html#1_2">Онлайн-семинар</a></div>
+              <div class="mini-point-container"> <a href="content1.html#1_3">Виртуальный класс</a></div>
+              <div class="mini-point-container"> <a href="content1.html#1_4">Тестирование</a></div>
+              <div class="mini-point-container"> <a href="content1.html#1_5">Система обмена сообщениями</a></div>
+              <div class="mini-point-container"> <a href="content1.html#1_6">E-learning</a></div>
+              <div class="mini-point-container"> <a href="content1.html#1_7">Сервисы</a></div>
+            </div>
+          </div>
+          
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav2 = !isNav2">кейс-технологии</p>
+            <div class="next-point-container" x-show="isNav2"> 
+              <div class="mini-point-container"> <a href="content2.html#2_1">Введение</a></div>
+              <div class="mini-point-container"> <a href="content2.html#2_2">Возможности</a></div>
+              <div class="mini-point-container"> <a href="content2.html#2_3">Особенности</a></div>
+              <div class="mini-point-container"> <a href="content2.html#2_4">Преимущества</a></div>
+              <div class="mini-point-container"> <a href="content2.html#2_5">Недостатки</a></div>
+              <div class="mini-point-container"> <a href="content2.html#2_6">Сервисы</a></div>
+            </div>
+          </div>
+          
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav3 = !isNav3">TV-технологии</p>
+            <div class="next-point-container" x-show="isNav3"> 
+              <div class="mini-point-container"> <a href="content3.html#3_1">Введение</a></div>
+              <div class="mini-point-container"> <a href="content3.html#3_2">Особенности</a></div>
+              <div class="mini-point-container"> <a href="content3.html#3_3">Преимущества</a></div>
+              <div class="mini-point-container"> <a href="content3.html#3_4">Недостатки</a></div>
+              <div class="mini-point-container"> <a href="content3.html#3_5">Сервисы</a></div>
+            </div>
+          </div>
+
+          <div class="point-container"> <a class="point-text" href="finish.html">Заключение</a></div>
+          <div class="point-container"> <a class="point-text" href="refs.html">Список использованных источников</a></div>
+        </div>
+      </section>
+      <section class="contents"> 
+        <div class="contents__cont-container" id="3_1">
+          <div class="title-container">
+            <h2>Введение</h2>
+          </div>
+          <div class="content-container"> 
+            <div class="text-container">
+              <p><b>TV-технология</b> - вид дистанционной технологии обучения, базирующийся на использовании систем телевидения для доставки обучающемуся учебно-методических материалов и организации регулярных консультаций у преподавателей - тьюторов. Тьютор - методист, преподаватель или консультант-наставник, входящий в профессорско-преподавательский состав системы ДО, осуществляющий методическую и организационную помощь обучаемым в рамках конкретной программы дистанционного обучения.</p>
+            </div>
+            <div class="image-container">
+              <div class="box"><img src="images/image3-1.jpg"/></div>
+            </div>
+            <div class="text-container">
+              <p>Само название способа обучения постепенно изменяется на "дистанционное". А слово "обучение" постепенно заменяется словом "образование", поскольку роль обучаемого становится все более активной и фрагментарный процесс обучения во время очных сессий дополняется непрерывным процессом самообразования с использованием записанных на те или иные носители или транслируемых по радио и телевидению лекций. TV-технология, как следует из ее названия, основана на использовании телевизионных лекций.</p>
+            </div>
+          </div>
+        </div>
+        <div class="contents__cont-container" id="3_2"> 
+          <div class="title-container">
+            <h2>Особенности</h2>
+          </div>
+          <div class="content-container"> 
+            <div class="text-container"> 
+              <p>Практика показывает что превращение видеоконференции
+                постоянный упругий поток телевещания позволяет существенно повысить
+                мотивацию учащихся к участию в дистанционного обучении поскольку
+                открывается возможность в диалоговом режиме высказываться по каждой
+                заинтересовавшей участника теме не только на письме но и вербально
+                Удаётся обсуждать животрепещущие вопросы уже не только в режиме чата
+                при большом количестве участников и обсуждаемых вопросов
+                напоминающего гвалт в комнате и известную неразбериху во мнениях но
+                слышать каждого участника обсуждения отдельно и в то же время получая
+                возможность сопоставлять отдельное мнение с каждым из рядоположенных</p>  
+            </div>
+          </div>
+        </div>
+
+
+        <div class="contents__cont-container" id="3_3"> 
+          <div class="title-container">
+            <h2>Преимущества</h2>
+          </div>
+          <div class="content-container"> 
+            <div class="text-container">
+              <p>Если рассматривать данную технологию непосредственно в сфере телевидения, то как таковых преимуществ она не имеет. Однако, в компаниях иногда прибегают к чему-то похожему. Например, компания может выпускать различные обучающие видеоролики, после чего демонстрировать их своим сотрудникам. В основном такой подход используется для расширения кругозора и знакомства со сферой деятельности.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contents__cont-container" id="3_4"> 
+          <div class="title-container">
+            <h2>Недостатки</h2>
+          </div>
+          <div class="content-container"> 
+            <div class="text-container">
+              <p>Учитывая технологичность современного мира выделить недостатки TV-технологий не составит труда. на сегодняшний день существует огромное количество технологий, как правило сетевых, которые превосходят TV-технологи по всем показателям.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contents__cont-container" id="3_5"> 
+          <div class="title-container">
+            <h2>Сервисы</h2>
+          </div>
+          <div class="text-container">
+            <p><b>Технология OTT</b> — метод предоставления видеоуслуг через Интернет. Термин OTT означает доставку видеосигнала от провайдера контента на устройство пользователя (приставку, компьютер, мобильный телефон) по сетям передачи данных, часто без прямого контакта с оператором связи, в отличие от традиционных услуг IPTV, которые предоставляются, как правило, только через управляемую самим оператором сеть с гарантированным QoS (QoE).</p>
+          </div>
+          <div class="image-container">
+            <div class="box"><img src="images/image3-2.jpg"/></div>
+          </div>
+          <div class="text-container">
+            <p><b><a href="https://megogo.ru/ru/">MEGOG</a></b> - Один из наиболее технологичных OTT-сервисов полностью сконцентрировавшийся на телевизорах Smart TV. Транслирует эфирные и кабельные каналы телевидения. А из огромной библиотеки видео формирует еще собственные «интерактивные» каналы, которые, по сути своей, являются просто списками воспроизведения, внутри которых можно перемещаться в пределах нескольких дней не только в прошлое, но и в будущее.</p>
+          </div>
+
+
+        </div>
+
+       
+      </section>
+    </section>
+    <footer class="footer"></footer>
+    <button class="up" x-data="{}" @click="window.scrollTo(pageYOffset, 0);">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+        <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M335.083,271.083 L228.416,377.749c-4.16,4.16-9.621,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251c-8.341-8.341-8.341-21.824,0-30.165 L289.835,256l-91.584-91.584c-8.341-8.341-8.341-21.824,0-30.165s21.824-8.341,30.165,0l106.667,106.667 C343.424,249.259,343.424,262.741,335.083,271.083z"></path>
+      </svg>
+    </button>
+  </body>
+</html>
